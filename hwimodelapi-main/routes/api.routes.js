@@ -1,0 +1,11 @@
+import { Router } from "express";
+import imageToUrl from "../controllers/imageToUrl.js";
+import getRecommendedTests from "../controllers/getRecommendedTests.js";
+import getDiagnosed from "../controllers/getDiagnosed.js";
+import virtualDoctor from "../controllers/virtualDoctor.js";
+const router = Router();
+router.route("/img-to-url").post(imageToUrl);
+router.route("/get-recommended-tests").post(getRecommendedTests);
+router.route("/get-diagnosed").post(getDiagnosed);
+router.route("/virtual-doctor").post(virtualDoctor);
+export default router;

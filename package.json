@@ -1,0 +1,19 @@
+{
+  "name": "healthhub",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000H\u0000e\u0000a\u0000l\u0000t\u0000h\u0000H\u0000u\u0000b\u0000\r\u0000 \u0000# HealthHub # HealthHub # HealthHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend": "cd claude/claude/backend  && node server.js",
+    "start:frontend": "cd claude/claude && npm run dev",
+    "start:ml":"cd hwimodelapi-main && node app.js",
+    "start": "concurrently  npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
